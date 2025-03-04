@@ -12,7 +12,7 @@
             <img src="../img/japanese-food.png" alt="yum yum" class="logo-img">
             <div class="logo">YumYum</div>
         </div>
-        <nav>
+        <nav>                                                                           
             <ul>
                 <li>
                     <a class="homelink" href="#">Home</a>
@@ -37,10 +37,16 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <h1>How Are You Feeling Today?</h1>
-        <img src="../img/Init.png" alt="">
+        <!-- <img src="../img/Init.png" alt=""> -->
+         <div class="emoji-choose-container">
+            <img class="emoji-choose" src="../img/emoji-1.png" alt="">
+            <img class="emoji-choose" src="../img/emoji-1.png" alt="">
+            <img class="emoji-choose" src="../img/emoji-1.png" alt="">
+            <img class="emoji-choose" src="../img/emoji-1.png" alt="">
+            <img class="emoji-choose" src="../img/emoji-1.png" alt="">
+         </div>
         <p>What's your vibe today? Let's find a meal that suits it!</p>
         <div class="button-group">
             <div class="button1">
@@ -57,4 +63,14 @@
     </div>
 
 </body>
+<script>
+    document.querySelectorAll('.emoji-choose').forEach((element) => {
+        element.addEventListener('click', () => {
+            if (!element.src.includes('on'))
+                element.src = element.src.replace('.png', '-on.png');
+            else
+                element.src = element.src.replace('-on.png', '.png');
+        });
+    });
+</script>
 </html>
