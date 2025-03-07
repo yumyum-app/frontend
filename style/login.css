@@ -7,6 +7,71 @@ body{
     font-family: 'DM Sans', sans-serif;
 }
 
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 10px;
+    background: whitesmoke;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logocontainer {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    margin-left: 6px;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Playfair Display",serif;
+    color: #474747;
+}   
+
+.logo-img {
+    height: 55px;
+    width: 53px;
+}
+
+nav{
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;  
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2F24;
+    font-weight: bold;
+}
+
+.loginlink {
+    border-radius: 118px;
+    padding: 4px 16px;
+    color: white;
+    background-color: black;
+    border: 1.5px solid black;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 a{
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color */
